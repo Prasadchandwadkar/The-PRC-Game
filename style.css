@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+/* 
+:root {
+	--primary-color: #87b1ff;
+	--dark-color: #333333;
+	--light-color: #f4f4f4;
+	--lose-color: #dc3545;
+	--win-color: #28a745;
+	--modal-duration: 1s;
+} */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+	background: rgb(34, 193, 195);
+	background: linear-gradient(
+		191deg,
+		rgba(34, 193, 195, 1) 6%,
+		rgba(187, 83, 231, 1) 70%
+	);
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+	padding: 2rem;
+}
+
+.reset-btn {
+	background-color: rgb(124, 243, 138);
+	border-radius: 500px;
+	height: 50px;
+	width: 200px;
+	margin: 1rem;
+	font-size: 20px;
+	color: black;
+}
+.reset-btn:hover {
+	background-color: white;
+}
+
+.score {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-size: 1.2rem;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	letter-spacing: 1px;
+}
+
+.score p:first-child {
+	background-color: rgb(255, 252, 58);
+	border-radius: 50px;
+	margin-right: 50px;
+	color: black;
+}
+
+.score p:last-child {
+	background-color: rgb(255, 252, 58);
+	border-radius: 50px;
+	color: black;
+	margin-left: 50px;
+}
+
+.choices {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 50px;
+	padding: 20px;
+}
+.choices p {
+	font-size: 25px;
+	text-align: center;
+	padding: 25px;
+	margin-left: 40px;
+	color: rgb(0, 0, 0);
+	opacity: 50%;
+}
+
+h2 {
+	margin-top: 70px;
+}
+
+.choices {
+	cursor: pointer;
+}
+.choices :hover {
+	color: rgb(0, 255, 251);
+}
+
+.text-win{
+	color: rgb(229, 255, 0);
+}
+
+@media (max-width: 700px) {
+	.choice {
+		font-size: 110px;
+	}
+	.choices p {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 500px) {
+	.choice {
+		font-size: 110px;
+	}
+	.choices p {
+		font-size: 10px;
+	}
+}
